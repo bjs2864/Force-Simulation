@@ -1,4 +1,4 @@
-package Model.Equipment;
+package Model.Equipment.Weapons;
 
 /**
  * This class will serve as a superclass for weapons within the simulation
