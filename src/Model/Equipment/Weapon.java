@@ -12,6 +12,16 @@ public class Weapon {
     private int weight;
 
     /**
+     * This is the visual detectability of the weapon
+     */
+    private int stealth;
+
+    /**
+     * This is the auditory signature of the weapon
+     */
+    private int noise;
+
+    /**
      * This is a coefficient that is used to represent a weapon's reliability
      */
     private int reliability;
@@ -34,8 +44,10 @@ public class Weapon {
     /**
      * This is the constructor for a Weapon
      */
-    public Weapon(int weight, int reliability, int range, int maxROF, int realROF){
+    public Weapon(int weight, int reliability, int range, int maxROF, int realROF, int stealth, int noise){
         this.weight=weight;
+        this.stealth=stealth;
+        this.noise=noise;
         this.reliability=reliability;
         this.range=range;
         this.maxROF=maxROF;
@@ -47,6 +59,20 @@ public class Weapon {
      */
     public int getWeight(){
         return weight;
+    }
+
+    /**
+     * This is a getter for stealth
+     */
+    public int getStealth(){
+        return stealth;
+    }
+
+    /**
+     * This is a getter for noise
+     */
+    public int getNoise(){
+        return noise;
     }
 
     /**
