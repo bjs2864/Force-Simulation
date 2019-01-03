@@ -1,4 +1,4 @@
 package Model.Environment;
 
-public class Region {
+public class Environment {
 }
